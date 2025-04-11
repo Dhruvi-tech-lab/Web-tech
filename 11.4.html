@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+<meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
+<title>Document</title> 
+</head> 
+<script> 
+function checkMobile() { 
+var mobile = document.getElementById("mobile").value; 
+console.log(mobile); 
+if (mobile.length < 10) { 
+document.getElementById("result").innerHTML = 
+"Please enter 10 digit number"; 
+} else if (mobile[0] === "9" || mobile[0] === "8") { 
+document.getElementById("result").innerHTML = 
+"You have entered a valid mobile number!"; 
+} 
+} 
+</script> 
+<body> 
+<input type="text" id="mobile" min="10" /> 
+<input type="button" onclick="checkMobile()" value="Submit" /> 
+<div id="result"></div> 
+</body> 
+</html>
