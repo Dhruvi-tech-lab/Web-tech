@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IoT Device Control</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        .device-btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 10px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .on { background-color: #4CAF50; color: white; }
+        .off { background-color: #f44336; color: white; }
+    </style>
+</head>
+<body>
+
+    <h2>IoT Device Control Panel</h2>
+
+    <p>Control your home devices remotely</p>
+
+    <button class="device-btn on" onclick="controlDevice('ON')">Turn ON Light</button>
+    <button class="device-btn off" onclick="controlDevice('OFF')">Turn OFF Light</button>
+
+    <script>
+        function controlDevice(status) {
+            alert("Light turned " + status);
+            // In actual implementation: use AJAX to send status to backend or IoT device
+        }
+    </script>
+
+</body>
+</html>
