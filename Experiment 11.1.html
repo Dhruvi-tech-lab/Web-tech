@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<script> 
+function printFunc(Err,d){ 
+for(let i=1;i<=Err;i++){ 
+if((i%2)==0){ 
+// let x = string(i) 
+// let y = "" 
+// y = y.concat(x) 
+document.write(i) 
+document.write("<br>") 
+} 
+} 
+document.getElementById(d).innerHTML= y 
+} 
+ 
+function validateForm() { 
+let num = document.forms["myForm"]["num"].value; 
+var numbers = /^[0-9]+$/; 
+//  if(inputtxt.value.match(num)){ 
+printFunc(num,print) 
+return false; 
+// } 
+} 
+</script> 
+</head> 
+<body> 
+<form name="myForm" onsubmit="return validateForm()" method="post"> 
+<label>Enter a number</label> 
+<input type="text" name="num"> 
+<input type="submit"> 
+</form> 
+<p id="print"></p> 
+
+</body> 
+</html

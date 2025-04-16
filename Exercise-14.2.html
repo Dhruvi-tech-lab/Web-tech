@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sensor Data Display</title>
+    <style>
+        body {
+            font-family: Verdana;
+            text-align: center;
+            background-color: #eef;
+        }
+        .sensor-box {
+            display: inline-block;
+            background: white;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px #aaa;
+        }
+        h3 { color: #333; }
+        .value {
+            font-size: 40px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Live Temperature Sensor Data</h2>
+    <div class="sensor-box">
+        <h3>Current Temperature</h3>
+        <div class="value" id="temperature">-- °C</div>
+    </div>
+
+    <script>
+        function getSensorData() {
+            // Simulating data fetch from IoT device
+            let temp = (20 + Math.random() * 10).toFixed(2);
+            document.getElementById("temperature").innerText = temp + " °C";
+
+            // Real-world: fetch from API or microcontroller endpoint using fetch()
+        }
+
+        // Update sensor value every 3 seconds
+        setInterval(getSensorData, 3000);
+    </script>
+
+</body>
+</html>

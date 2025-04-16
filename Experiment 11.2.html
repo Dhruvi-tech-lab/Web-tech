@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+<meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
+<title>Document</title> 
+<script> 
+function searchString() { 
+var string = document.getElementById("string").value; 
+var word = document.getElementById("word").value; 
+a = string.indexOf(word); 
+document.getElementById("result").innerHTML = a; 
+} 
+</script> 
+</head> 
+<body> 
+<h3>JavaScript Program to search index of a word in an array :</h3> 
+<label>Enter the Sentence : </label> 
+<input type="text" id="string" /> 
+<label>Enter the Word : </label> 
+<input type="text" id="word" /> 
+<input type="button" onclick="searchString()" value="Submit" /> 
+<div id="result"></div> 
+</body> 
+</html>

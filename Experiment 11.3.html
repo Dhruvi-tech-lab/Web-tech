@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+<meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
+<title>Document</title> 
+<script> 
+function printNumbers() { 
+var prime = "<br>Prime Numbers:<br>"; 
+for (let i = 1; i <= 10; i++) { 
+let flag = 0; 
+for (let j = 2; j < i; j++) { 
+if (i % j == 0) { 
+flag = 1; 
+break; 
+} 
+} 
+if (i > 1 && flag == 0) { 
+prime = prime + i + " "; 
+} 
+} 
+document.getElementById("result").innerHTML = prime; 
+} 
+</script> 
+</head> 
+<body> 
+<label>The first 10 prime numbers are : </label> 
+<input type="button" onclick="printNumbers()" value="Submit" /> 
+<div id="result"></div></body></html>
