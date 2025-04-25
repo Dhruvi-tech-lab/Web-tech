@@ -1,0 +1,57 @@
+<h4>2. Create a web page named Rotation and scaling using CSS and show rotation and scaling effect 
+    with arbitrary images. </h4>
+    <style> 
+    #normal-image-1 { 
+        width: 300px; 
+        height: 200px; 
+        margin: auto; 
+    } 
+    #rotation-image-1 { 
+        width: 300px; 
+        height: 200px; 
+        transform: rotate(30deg); 
+        margin: 60px; 
+    } 
+    #scaling-image-1 { 
+        width: 300px; 
+        height: 200px; 
+        transform: scale(0.65, 0.65); 
+    } 
+    #translation-image-1 { 
+        width: 300px; 
+        height: 200px; 
+        margin: 80px; 
+        transform: translate(15px, -40px); 
+    } 
+    .normal-image, .rotation-image, .scaling-image, .translation-image { 
+        display: inline-block; 
+        margin: auto; 
+        text-align: center; 
+    } 
+    </style> 
+    <title>Rotation, Scaling and Translation</title> 
+    </head> 
+    <body> 
+    <div class="images"> 
+        <div class="normal-image"> 
+            <h2>Normal Image</h2> 
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCALJ3vLktFZZc_zWzBtu8klYrsARg0KDYZg&s" id="normal-image-1" alt="book" /> 
+        </div> 
+        <div class="rotation-image"> 
+            <h2>Rotation Image</h2> 
+            <h3>Rotation at 30 degrees</h3> 
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn57-J2zfj6g-pvXKxdQqlJylGUlviGRp7PA&s" id="rotation-image-1" alt="book" /> 
+        </div> 
+        <div class="scaling-image"> 
+            <h2>Scaling Image</h2> 
+            <h3>Scaling of 0.65 and 0.65</h3> 
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Dp52z-8sYB1O2wqDULIvDGS6T1HbFSc4tQ&s" id="scaling-image-1" alt="book" /> 
+        </div> 
+        <div class="translation-image"> 
+            <h2>Translation Image</h2> 
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2d1sXZs6PldHPIo7BazPIKUTpe07cWyGwfA&s" id="translation-image-1" alt="book" /> 
+        </div> 
+    </div> 
+    </body> 
+    </html>
+    

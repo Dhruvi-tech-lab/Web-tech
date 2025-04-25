@@ -1,0 +1,175 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <h4>1. Design a web page named “Journalism course Registration Form” Which include First Name, Last Name, 
+Gender, D.O.B Mail ID, Mobile Number, Address, Hobbies, Political inclination, Image upload, Username, 
+Password, Register Button.</h4>
+<meta charset="UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+<meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
+<title>Journalism Course Registration Form</title> 
+<style> 
+label { 
+font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", 
+"Lucida Sans", Arial, sans-serif; 
+font-weight: 500; 
+} 
+form { 
+padding: 5rem; 
+box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
+display: grid; 
+grid-gap: 2rem; 
+grid-template-columns: 1fr 2fr 1fr 2fr; 
+} 
+.heading { 
+font-size: 40px; 
+} 
+input, 
+textarea { 
+/* border-raxdius: 3px; */ 
+padding: 0.3rem; 
+outline: none; 
+} 
+textarea { 
+resize: none; 
+} 
+input:focus { 
+border: 2px solid green; 
+color: blue; 
+} 
+
+.btn { 
+float: right; 
+color: white; 
+border-radius: 10px; 
+padding: 1rem; 
+width: 50%; 
+background: green; 
+align-content: center; 
+font-size: 15px; 
+} 
+.btn:hover { 
+cursor: pointer; 
+} 
+.upload:hover { 
+cursor: pointer; 
+} 
+input[type="radio"] { 
+appearance: none; 
+color: green; 
+background-color: #fff; 
+margin: 0; 
+font: inherit; 
+width: 1.15em; 
+height: 1.15em; 
+border-radius: 0.15em; 
+margin: 0 1rem; 
+} 
+input[type="radio"]:checked:after { 
+width: 15px; 
+height: 15px; 
+border-radius: 15px; 
+top: -3px; 
+left: -1px; 
+position: relative; 
+background-color: green; 
+content: ""; 
+display: inline-block; 
+visibility: visible; 
+border: 2px solid white; 
+} 
+select { 
+width: 50%; 
+padding: 1.3rem; 
+font-size: 20px; 
+} 
+.typewriter h1 { 
+color: black; 
+font-family: monospace; 
+overflow: hidden; 
+border-right: 0.15em solid orange; 
+white-space: nowrap; 
+margin: 0 auto; 
+letter-spacing: 0.15em; /* Adjust as needed */ 
+animation: typing 7.5s steps(75, end), 
+
+blink-caret 0.5s step-end infinite; 
+} 
+@keyframes typing { 
+from { 
+width: 0; 
+} 
+to { 
+width: 100%; 
+} 
+} 
+@keyframes blink-caret { 
+from, 
+to { 
+border-color: transparent; 
+} 
+50% { 
+border-color: orange; 
+} 
+} 
+</style> 
+</head> 
+<body> 
+<div class="typewriter"> 
+<h1>Registration Form.</h1> 
+</div> 
+<form> 
+<label>First Name : </label> 
+<input type="text" name="firstName" placeholder="First Name" /> 
+<label>Last Name : </label> 
+<input type="text" name="lastName" placeholder="Last Name" /> 
+<label>Gender : </label> 
+<div> 
+<input type="radio" name="gender" id="Male" /> 
+<label>Male</label> 
+<input type="radio" name="gender" id="Female" /> 
+<label>Female</label> 
+<input type="radio" name="gender" id="Other" /> 
+<label>Other</label> 
+</div> 
+<label>DOB : </label> 
+<input type="date" name="DOB" placeholder="" /> 
+<label>Email ID : </label> 
+<input type="email" name="emailID" placeholder="s@gmail.com" required /> 
+<label>Mobile Number : </label> 
+<input type="text" name="number" placeholder="+91 87888787678" /> 
+<label>Address : </label> 
+<textarea 
+type="text" 
+name="address" 
+placeholder="Enter your address : " 
+></textarea> 
+38 
+
+<label>Hobbies : </label> 
+<input type="text" name="hobbies" placeholder="Swimming etc." /> 
+<label>Political Inclination : </label> 
+<div> 
+<select name="political Inclination"> 
+<option>BJP</option> 
+<option>CP</option> 
+</select> 
+</div> 
+<label>Image Upload : </label> 
+<input type="file" name="hobbies" placeholder="" class="upload" /> 
+<label>Username : </label> 
+<input type="text" name="hobbies" placeholder="username" /> 
+<label>Password : </label> 
+<input 
+type="password" 
+name="hobbies" 
+placeholder="password" 
+class="btn_text" 
+/> 
+<div></div> 
+<div></div> 
+<div></div> 
+<input type="submit" name="submit" value="Register" class="btn" /> 
+</form> 
+</body> 
+</html>

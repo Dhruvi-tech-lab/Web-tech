@@ -1,0 +1,72 @@
+<h4>3. Design a web page displaying the following table with borders and with collapsed borders.</h4>
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Table with Collapsed Borders</title>
+   <style>
+       /* Center the table */
+       body {
+           text-align: center;
+           font-family: Arial, sans-serif;
+       }
+
+       /* Table Styling */
+       table {
+           width: 60%;
+           margin: auto;
+           border-collapse: collapse; /* Ensures borders are merged */
+           text-align: center;
+           border: 3px solid red; /* Outer border */
+       }
+
+       /* Table Header */
+       th {
+           background-color: #f2f2f2;
+           border: 3px solid red;
+           padding: 10px;
+       }
+
+       /* Table Cells */
+       td {
+           border: 3px solid red;
+           padding: 10px;
+       }
+
+       /* Row Styling */
+       tr:nth-child(odd) {
+           background-color: #f9f9f9;
+       }
+   </style>
+</head>
+<body>
+
+   <h2>Employee Details</h2>
+   <table>
+       <tr>
+           <th>Name</th>
+           <th>Profession</th>
+           <th>Experience</th>
+           <th>Age</th>
+       </tr>
+       <tr>
+           <th>Viral Mehta</th>
+           <td>Embedded Engineer</td>
+           <td>4 years</td>
+           <td>25</td>
+       </tr>
+       <tr>
+           <th>Ramesh Amin</th>
+           <td>System Analyst</td>
+           <td>6 years</td>
+           <td>27</td>
+       </tr>
+       <tr>
+           <th>Shrikant Patel</th>
+           <td>PHP Programmer</td>
+           <td>9 years</td>
+           <td>30</td>
+       </tr>
+   </table>
+
+</body>
+</html>
