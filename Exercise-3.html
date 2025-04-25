@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        form {
+            width: 50%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        .checkbox-group, .radio-group {
+            text-align: left;
+            margin-top: 5px;
+        }
+        button {
+            background-color: #004080;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Student Feedback Form</h1>
+
+    <form>
+        <label for="name">Student Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department">
+            <option value="ec">Electronics & Communication</option>
+            <option value="cs">Computer Science</option>
+            <option value="mech">Mechanical</option>
+            <option value="civil">Civil</option>
+            <option value="electrical">Electrical</option>
+        </select>
+
+        <label for="rating">Overall Rating:</label>
+        <div class="radio-group">
+            <input type="radio" id="excellent" name="rating" value="excellent">
+            <label for="excellent">Excellent</label>
+            
+            <input type="radio" id="good" name="rating" value="good">
+            <label for="good">Good</label>
+            
+            <input type="radio" id="average" name="rating" value="average">
+            <label for="average">Average</label>
+            
+            <input type="radio" id="poor" name="rating" value="poor">
+            <label for="poor">Poor</label>
+        </div>
+
+        <label>Which facilities do you like?</label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="library" name="facilities" value="Library">
+            <label for="library">Library</label>
+            
+            <input type="checkbox" id="labs" name="facilities" value="Labs">
+            <label for="labs">Labs</label>
+            
+            <input type="checkbox" id="sports" name="facilities" value="Sports">
+            <label for="sports">Sports</label>
+            
+            <input type="checkbox" id="canteen" name="facilities" value="Canteen">
+            <label for="canteen">Canteen</label>
+        </div>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Enter your feedback..."></textarea>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<h3>1.Create HTML Page that contains form with fields Name, Email, Mobile No, Gender , Favorite Color and a button now write a JavaScript code to combine and display the information in textbox when the button is clicked.</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form Example</title>
+   <script>
+       function displayInfo() {
+           let name = document.getElementById("name").value;
+           let email = document.getElementById("email").value;
+           let mobile = document.getElementById("mobile").value;
+           let gender = document.querySelector('input[name="gender"]:checked')?.value || "";
+           let color = document.getElementById("color").value;
+
+           let output = `Name: ${name}, Email: ${email}, Mobile: ${mobile}, Gender: ${gender}, Favorite Color: ${color}`;
+           document.getElementById("output").value = output;
+       }
+   </script>
+</head>
+<body>
+   <h2>Form Example</h2>
+   <form>
+       Name: <input type="text" id="name" required><br><br>
+       Email: <input type="email" id="email" required><br><br>
+       Mobile No: <input type="text" id="mobile" pattern="[0-9]{10}" required><br><br>
+       Gender:
+       <input type="radio" name="gender" value="Male"> Male
+       <input type="radio" name="gender" value="Female"> Female
+       <input type="radio" name="gender" value="Other"> Other<br><br>
+       Favorite Color: <input type="color" id="color"><br><br>
+       <button type="button" onclick="displayInfo()">Submit</button>
+       <br><br>
+       Output: <input type="text" id="output" readonly><br><br>
+   </form>
+</body>
+</html>

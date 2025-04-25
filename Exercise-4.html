@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Frames</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            background: #1a1a2e;
+        }
+        .nav {
+            width: 25%;
+            background: #0f0f1a;
+            color: white;
+            padding: 20px;
+        }
+        .nav h3 {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .nav h3::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: yellow;
+            margin: 5px auto;
+        }
+        .nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .nav ul li {
+            margin: 10px 0;
+        }
+        .nav ul li a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            background: #252545;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .nav ul li a img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        .nav ul li a:hover {
+            background: yellow;
+            color: black;
+        }
+        .content {
+            width: 75%;
+            border-left: 2px solid #ddd;
+            background: white;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <h3>Navigation</h3>
+        <ul>
+            <li><a href="data:text/html,<h2>Home</h2><p>Welcome to Home.</p>" target="content-frame"><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Home"> Home</a></li>
+            <li><a href="data:text/html,<h2>About</h2><p>About Us Information.</p>" target="content-frame"><img src="https://cdn-icons-png.flaticon.com/512/684/684809.png" alt="About"> About</a></li>
+            <li><a href="data:text/html,<h2>Contact</h2><p>Contact Details Here.</p>" target="content-frame"><img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Contact"> Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <iframe name="content-frame" src="data:text/html,<h2>Welcome</h2><p>Click a link on the left to view content here.</p>"></iframe>
+    </div>
+
+</body>
+</html>

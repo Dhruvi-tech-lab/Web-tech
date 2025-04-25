@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frameset Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .row {
+            display: flex;
+            flex: 1;
+        }
+        .frame {
+            flex: 1;
+            padding: 20px;
+            border: 2px solid white;
+        }
+        .frame1 { background-color: #ff9999; } /* Light Red */
+        .frame2 { background-color: #99ccff; } /* Light Blue */
+        .frame3 { background-color: #99ff99; } /* Light Green */
+        .frame4 { background-color: #ffcc99; } /* Light Orange */
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+        }
+        th, td {
+            border: 2px solid red;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background: lightgray;
+            font-weight: bold;
+        }
+        td:first-child {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="frame frame1">
+                <h3>Frame 1</h3>
+            </div>
+            <div class="frame frame2">
+                <h3>Frame 2</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="frame frame3">
+                <h3>Frame 3</h3>
+            </div>
+            <div class="frame frame4">
+                <h3>Frame 4</h3>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Profession</th>
+                        <th>Experience</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td><b>Viral Maheta</b></td>
+                        <td>Embedded Engineer</td>
+                        <td>4 years</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td><b>Ramesh Amin</b></td>
+                        <td>System Analyst</td>
+                        <td>6 years</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td><b>Shriank Patel</b></td>
+                        <td>PHP Programmer</td>
+                        <td>9 years</td>
+                        <td>30</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
